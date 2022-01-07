@@ -1,0 +1,108 @@
+
+Note : for postman do not use 3000 as port no as it has been given to react
+
+incase of issue restart terminal by killing earlier terminal using ctrl+c   ."IN WORST CASE RESTART VS-CODE"
+
+
+SAVE YOUR DATA TO AVOID ISSUES
+
+
+
+-------------------------------------------------------------------------------	
+
+			backend 
+-------------------------------------------------------------------------------
+Mysql :-
+
+	1." npn init "(enter -> enter -> enter.....  json package)
+	
+	2." make src "
+
+	Dependencies :
+	
+		1. npm install mysql
+		2.npm install bluebird
+		3.npm insall express
+		4.npm install cors
+
+
+	3.Create Database and table
+		
+		-> create database
+		-> use database
+		-> create table [create table table_name ( col1 datatype, col2 datatype )
+
+	4.const mysql = require("mysql");
+	 const Promise = require("bluebird");
+	Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+	
+	5.Write code 
+const dbinfo={}
+async function functionname , await
+
+
+	6.export functions module.exports = { , };
+--------------------------------------------------------------------------------------
+
+Express :	
+	
+	 1.	const express = require("express");
+		const app = express();
+		app.use(express.json());
+
+		const cors = require("cors");
+		app.use(cors());
+
+	2.import {} = require("./data")
+	or
+	const { } = require("./user");
+
+	3.write code.....
+	get
+	post
+
+-------------------------------------------------------------------------------------------------------------------------
+
+					for password related issue in  database
+
+	ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'cdac'
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+					package.json
+
+	"start": "nodemon src/main.js"
+
+=========================================================================================================================	
+
+					Front End 
+
+-----------------------------
+FOR REACT APP
+-----------------------------
+1) npx create-react-app exam
+2) npm start 		=>	to connect with server
+
+3) To get bootstrap in react
+	npm install react-bootstrap bootstrap@5.1.3
+	-->   import 'bootstrap/dist/css/bootstrap.min.css';
+	--> import in index.js
+
+4) import {useState} from "react"
+5) npm install axios
+	import axios from "axios" 
+
+
+==================================================================================================
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+crossorigin="anonymous">
+		
+
+--------------------------
+js
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+crossorigin="anonymous"></script>
